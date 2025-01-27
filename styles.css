@@ -1,0 +1,110 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #1c1c1c;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    text-align: center;
+    color: #00ff00;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+form, table {
+    background: #444;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="submit"],
+button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
+    background: #555;
+    color: #fff;
+}
+
+input[type="submit"],
+button {
+    background: #00ff00;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background: #00cc00;
+}
+
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #00ff00;
+    text-align: center;
+}
+
+th {
+    background-color: #333;
+    color: #00ff00;
+}
+
+td {
+    padding: 15px;
+    background-color: #222;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #333;
+}
+
+tr:hover {
+    background-color: #555;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-bottom: 15px;
+}
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animated-row {
+    animation: fadeInUp 0.5s ease-in-out;
+}
